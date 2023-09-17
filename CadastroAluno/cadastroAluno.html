@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Aluno</title>
+
+    <style>
+
+        .fieldset{
+            margin: 1%;
+            border-width: 1%;
+            border-color: black;
+            padding: 5%;
+            width: 84%;
+            height: 80rem;
+        }
+
+        .campos{
+            display: block;
+            margin: 2%;
+            margin-top: 0;
+            width: 100%;
+            height: 2rem;
+        }
+
+        label{
+            margin: 2%;
+            margin-bottom: 0;
+        }
+
+        .botoes{
+            margin-top: 2%;
+            margin-left: 2%;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <section>
+            <form action="">
+                <fieldset class="fieldset">
+                    <legend>Cadastro de Aluno</legend>
+
+
+                    <label for="idLabelNome">Nome:</label><br>
+                    <input class="campos" type="text" id="idNome" name="nameNome" required>
+
+
+                    <label for="idLabelSobrenome">Sobrenome:</label><br>
+                    <input class="campos" type="text" id="idSobrenome" name="nameSobrenome" required>
+
+
+                    <label for="idLabelDataNascimento">Data de Nascimento:</label><br>
+                    <input class="campos" type="date" id="idDataNascimento" name="nameDataNascimento" min="2000/01/01" max="2017/12/31">
+
+
+                    <label for="idLabelEndereco">Endereço:</label><br>
+                    <input class="campos" type="text" id="idEndereco" name="nameEndereco" required>
+
+
+                    <label for="idLabelNomeMae">Nome da Mãe:</label><br>
+                    <input class="campos" type="text" id="idNomeMae" name="nameNome" required>
+
+
+                    <label for="idLabelNomePai">Nome do Pai:</label><br>
+                    <input class="campos" type="text" id="idNomePai" name="nameNomePai" required>
+
+
+                    <label for="idLabelEmail">Email:</label><br>
+                    <input class="campos" type="email" id="idEmail" name="nameEmail" required>
+
+
+                    <label for="idLabelTelefone">Telefone:</label><br>
+                    <input class="campos" type="number" id="idTelefone" name="nameTelefone">
+
+
+                    <label for="idLabelSerie">Série:</label><br>
+                    <input class="campos" type="number" id="idSerie" name="nameSerie" min="0" max="9">
+
+
+
+                    <label for="idLabelSexo">Sexo:</label><br>
+
+                    <input class="botoes" type="radio" id="idSexoFeminino" name="nameSexo">
+                    <label for="idSexoFeminino">Feminino</label><br>
+                    <input class="botoes" type="radio" id="idSexoMasculino" name="nameSexo">
+                    <label for="idSexoMasculino">Masculino</label><br><br><br>
+
+
+
+                    <label for="idNecessidadesEspeciais">Necessidades Especiais:</label><br>
+                    
+                    <input class="botoes" type="checkbox" name="nameDeficienciaAuditiva" id="idDeficienciaAuditiva">
+                    <label for="idDeficienciaAuditiva">Deficiência Auditiva</label><br>
+
+                    <input class="botoes" type="checkbox" name="nameDeficienciaMotora" id="idDeficienciaMotora">
+                    <label for="idDeficienciaMotora">Deficiência Motora</label><br>
+
+                    <input class="botoes" type="checkbox" name="nameDeficienciaVisual" id="idDeficienciaVisual">
+                    <label for="idDeficienciaVisual">Deficiência Visual</label><br>
+
+                    <input class="botoes" type="checkbox" name="nameParalisiaCelebral" id="idParalisiaCelebral">
+                    <label for="idParalisiaCelebral">Paralisia Celebral</label><br>
+
+                    <input class="botoes" type="checkbox" name="nameAutista" id="idAutista">
+                    <label for="idAutista">Perturbação do Espectro Autista</label><br>
+
+                    <input class="botoes" type="checkbox" name="nameForoPsicologico" id="idForoPsicologico">
+                    <label for="idForoPsicologico">Perturbação do Foro Psicológico</label><br>
+
+                    <input class="botoes" type="checkbox" name="namePerturbacaoAprendizagem" id="idPerturbacaoAprendizagem">
+                    <label for="idPerturbacaoAprendizagem">Perturbação de Aprendizagem</label><br>
+
+                    <input class="botoes" type="checkbox" name="nameAltasHabilidades" id="idAltasHabilidades">
+                    <label for="idAltasHabilidades">Altas Habilidades</label><br>
+
+
+
+                    <button class="botoes" type="submit">Salvar</button>
+                    <button class="botoes" type="reset">Limpar Tela</button>
+
+                </fieldset>
+            </form>         
+        </section>
+    </main>
+</body>
+
+</html>

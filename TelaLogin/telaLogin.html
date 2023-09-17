@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+
+    <style>
+
+        .fieldset{
+            margin: 1%;
+            border-width: 1%;
+            padding: 5%;
+            width: 84%;
+            height: 15rem;
+        }
+
+        .campos{
+            display: block;
+            margin: 2%;
+            width: 100%;
+            height: 2rem;
+        }
+
+        label{
+            margin: 2%;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <section>
+            <form action="">
+                <fieldset class="fieldset">
+
+                    <label id="label" for="idLabelUsuario" >Usuário:</label><br>
+                    <input class="campos" type="text" id="idUsuario" name="nameUsuario" required>
+
+                    <br><br>
+
+                    <label id="label" for="idLabelSenha" >Senha:</label><br>
+                    <input class="campos" type="password" id="idSenha" name="nameSenha" required>
+
+                    <button type="submit">ENVIAR</button>
+
+                </fieldset>
+            </form>         
+        </section>
+    </main>
+</body>
+
+</html>

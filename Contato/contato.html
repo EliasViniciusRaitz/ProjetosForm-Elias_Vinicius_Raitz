@@ -8,16 +8,31 @@
 
     <style>
 
-        *{
-            background-color: black;
+        .fieldset{
+            margin: 1%;
+            border-width: 1%;
+            border-color: black;
+            padding: 5%;
+            width: 84%;
+            height: 35rem;
         }
 
-        .box {
-            border: 2px solid black;
-            border-radius: 0px;
-            padding: 10px;
-            box-sizing: border-box;
-            background-color: aquamarine;
+        .campos{
+            display: block;
+            margin: 2%;
+            width: 100%;
+            height: 2rem;
+        }
+
+        .textAreaMensagem{
+            width: 100%;
+            margin: 2%;
+            height: 2rem;
+            height: 10rem;
+        }
+
+        label{
+            margin: 2%;
         }
 
     </style>
@@ -27,29 +42,33 @@
 <body>
     <main>
         <section>
-            <div class="box">
-                <article>
-                    <h1>TESTE</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga voluptate ipsum totam sint. Quae repudiandae eos fugiat tenetur eum voluptatum beatae expedita delectus tempore voluptatibus, corporis consequatur veniam iste doloremque?
-                    </p>
-                    <h2>TESTE2</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae maxime ipsam modi illo, nihil atque soluta ut voluptatem veniam exercitationem cumque esse autem tempore natus minima voluptates numquam eveniet enim!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae maxime ipsam modi illo, nihil atque soluta ut voluptatem veniam exercitationem cumque esse autem tempore natus minima voluptates numquam eveniet enim!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae maxime ipsam modi illo, nihil atque soluta ut voluptatem veniam exercitationem cumque esse autem tempore natus minima voluptates numquam eveniet enim!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae maxime ipsam modi illo, nihil atque soluta ut voluptatem veniam exercitationem cumque esse autem tempore natus minima voluptates numquam eveniet enim!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae maxime ipsam modi illo, nihil atque soluta ut voluptatem veniam exercitationem cumque esse autem tempore natus minima voluptates numquam eveniet enim!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae maxime ipsam modi illo, nihil atque soluta ut voluptatem veniam exercitationem cumque esse autem tempore natus minima voluptates numquam eveniet enim!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae maxime ipsam modi illo, nihil atque soluta ut voluptatem veniam exercitationem cumque esse autem tempore natus minima voluptates numquam eveniet enim!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae maxime ipsam modi illo, nihil atque soluta ut voluptatem veniam exercitationem cumque esse autem tempore natus minima voluptates numquam eveniet enim!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae maxime ipsam modi illo, nihil atque soluta ut voluptatem veniam exercitationem cumque esse autem tempore natus minima voluptates numquam eveniet enim!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae maxime ipsam modi illo, nihil atque soluta ut voluptatem veniam exercitationem cumque esse autem tempore natus minima voluptates numquam eveniet enim!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae maxime ipsam modi illo, nihil atque soluta ut voluptatem veniam exercitationem cumque esse autem tempore natus minima voluptates numquam eveniet enim!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae maxime ipsam modi illo, nihil atque soluta ut voluptatem veniam exercitationem cumque esse autem tempore natus minima voluptates numquam eveniet enim!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae maxime ipsam modi illo, nihil atque soluta ut voluptatem veniam exercitationem cumque esse autem tempore natus minima voluptates numquam eveniet enim!</p>
+            <form action="">
+                <fieldset class="fieldset">
+                    <legend>CONTATO</legend>
 
-                </article>
-            </div>
+                    <input class="campos" style="margin-top: 0;" type="text" id="idNomeCompleto" placeholder="Nome Completo:" name="nameNomeCompleto" required>
+
+                    <input class="campos" type="email" id="idEmail" placeholder="Email:" name="nameEmail" required>
+
+                    <input class="campos" type="text" id="idEmpresaOrganizacao" placeholder="Empresa/Organização:" name="nameEmpresaOrganizacao">
+
+                    <input class="campos" type="number" id="idTelefone" placeholder="Telefone:">
+
+                    <label id="label" for="idLabelMotivoContato" >Motivo do Contato:</label><br>
+                    <select class="campos" name="nameMotivoContato" id="idMotivoContato" aria-placeholder="Motivo do Contato:" required>
+                        <option value="elogio" >Elogio</option>
+                        <option value="problemaProduto" >Problema com Produto</option>
+                        <option value="reclamacao">Reclamação</option>
+                        <option value="sugestao">Sugestão</option>
+                        <option value="outro">Outro</option>
+                    </select>
+
+                    <textarea class="textAreaMensagem"  name="nameMensagem" id="idMensagem" placeholder="Mensagem:" required></textarea>
+
+                    <button type="submit">ENVIAR</button>
+
+                </fieldset>
+            </form>         
         </section>
     </main>
 </body>
